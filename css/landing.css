@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Staatliches', cursive; */
+/* font-family: 'Lato', sans-serif; */
+
+:root {
+      --primary-color: #c72727;
+      --secondary-color: #f99500;
+      --light-color:#f3f3f3;
+      --dark-color: #333;
+      --max-width: 1500px;
+}
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+ul {list-style: none;}
+
+a{
+      color: #333;
+      text-decoration: none;;
+}
+
+
+/* Nab Bar */
+#navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      background: #fff;
+      font-family: 'Roboto', sans-serif;
+      top: 0;
+      padding: 1rem 3rem;
+      z-index: 1;
+}
+
+#navbar a {
+      margin-left: 1.4rem;
+}
+
+
+
+/* Landing : Showcase Styling*/
+#showcase{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     /* font-family: 'Roboto', sans-serif; */
+     color: #fff;
+}
+
+#showcase a{
+      color: #fff ;
+      font-size: 1.2rem;
+      padding:  .7rem 1.5rem;
+      background: black;
+      border: 4px #888 solid;
+      transition: all 0.5s ease-in-out;
+}
+
+#showcase h1{
+      font-size: 3.5rem;
+      margin-bottom: 1.75rem;
+      letter-spacing: 0.6rem;
+}
+#showcase .men{
+background: url('../imgs/man.jpg') no-repeat center center/cover;
+transition: all 0.8s ease-in-out;
+}
+
+#showcase .women{
+      background: url('../imgs/babe.jpg') no-repeat center center/cover;
+      transition: all 0.8s ease-in-out;
+}
+
+#showcase .boy{
+      background: url('../imgs/boy.jpg')no-repeat center center/cover;
+      transition: all 0.8s ease-in-out;
+}
+
+#showcase .girl{
+      background: url('../imgs/girl.jpg')no-repeat center center/cover;
+      transition: all 0.8s ease-in-out;
+}
+
+#showcase .men:hover,
+#showcase .women:hover,
+#showcase .boy:hover,
+#showcase .girl:hover{
+      transform: scale(1.2);
+}
+
+
+#showcase .men,
+#showcase .women,
+#showcase .boy,
+#showcase .girl{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+}
+
+/* This causes the h1 and a tag to move up to the edge of their parent */
+#showcase .men .men-content,
+#showcase .boy .boy-content,
+#showcase .women .women-content,
+#showcase .girl .girl-content{
+      background: rgba(0,0,0, 0.4);
+      min-height: 100%;
+      min-width: 100%;
+}
+/* Pushes the <a> and <h1> down */
+#showcase .men .men-content h1,
+#showcase .boy .boy-content h1,
+#showcase .women .women-content h1,
+#showcase .girl .girl-content h1,
+#showcase .men .men-content a,
+#showcase .boy .boy-content a,
+#showcase .women .women-content a,
+#showcase .girl .girl-content a{
+      margin-top: 12rem;
+      transition: all 0.7s ease-in-out;
+}
+
+#showcase .men .men-content h1:hover,
+#showcase .men .men-content a:hover{
+      color: #ec9d0a;
+}
+
+#showcase .women .women-content h1:hover,
+#showcase .women .women-content a:hover{
+      color:  rgb(14,208 ,208);
+      
+}
+
+#showcase .girl .girl-content h1:hover,
+#showcase .girl .girl-content a:hover{
+      color: rgb(234 ,52 , 52);
+}
+
+#showcase .boy .boy-content h1:hover,
+#showcase .boy .boy-content a:hover{
+      color: #ec9d0a;
+}
+
+
+/* Footer Styling */
+#main-footer {
+      background: var(--light-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      color: var(--dark-color);
+      font-size: 1.2rem;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+}
